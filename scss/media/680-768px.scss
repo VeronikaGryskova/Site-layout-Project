@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+  .asideAndMain {
+    gap: 20px;
+    aside {
+      gap: 5%;
+
+      .menu {
+        &_info img {
+          display: none;
+        }
+
+        &_item {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .baner {
+    background-image: url(../../img/680-768px/baner\(680-768px\).svg);
+    background-size: cover;
+    width: 545px;
+    height: 353px;
+
+    &_header {
+      justify-content: start;
+      padding-left: 10px;
+      top: 262px;
+      width: 535px;
+      height: 49px;
+      background: $white;
+      opacity: 0.6;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &_description {
+      justify-content: start;
+      padding-left: 10px;
+      top: 311px;
+      width: 535px;
+      height: 42px;
+    }
+  }
+
+  .tab {
+    display: none;
+  }
+  .subscribeBox {
+    margin-top: 40px;
+    width: 545px;
+    height: 96px;
+    flex-flow: row wrap;
+
+    input {
+      width: 394px;
+      height: 22px;
+    }
+
+    button {
+      width: 80px;
+      height: 23px;
+    }
+
+    .newsletterDescription {
+      width: 474px;
+      height: 32px;
+    }
+  }
+
+  .cards {
+    margin-top: 25px;
+    column-gap: 30px;
+    row-gap: 15px;
+    justify-content: center;
+
+    .card {
+      width: 238px;
+      height: 337px;
+
+      img {
+        width: 238px;
+        height: 150px;
+      }
+
+      &_frame {
+        width: 238px;
+        height: 150px;
+      }
+      &_body {
+        height: 135px;
+      }
+    }
+  }
+
+  footer {
+    width: 560px;
+    height: 78px;
+  }
+}

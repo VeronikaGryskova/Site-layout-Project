@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.asideAndMain {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.logo {
+  div {
+    background-image: url(../../icons/icon-logo.svg);
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+aside {
+  width: 140px;
+
+  .menu {
+    margin-top: 9px;
+
+    &_item {
+      @include fontMenu;
+      width: 140px;
+      height: 66px;
+      margin-left: 3px;
+      margin-top: 5px;
+    }
+    &_info {
+      width: 134px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+    }
+    &_icon {
+      width: 30px;
+      height: 30px;
+    }
+    &_heading {
+      margin-left: 12px;
+    }
+  }
+  .aside_tweet {
+    margin-top: 9px;
+  }
+  .aside_header {
+    font-family: $secondFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: $black;
+    width: 140px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    .border {
+      border-bottom: $borderDashedLine;
+      margin-top: 5px;
+    }
+  }
+  .btnTweet {
+    @include borderButtonMenu;
+    width: 140px;
+    height: 30px;
+    font-family: $mainFont;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: $primary;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+
+    &_info {
+      width: 120px;
+      height: 16px;
+      margin-left: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .aside_friends {
+    margin-top: 9px;
+
+    .description {
+      font-family: $mainFont;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 19px;
+      width: 140px;
+      height: 56px;
+      margin-top: 10px;
+    }
+    .btnTweet {
+      margin-top: 15px;
+    }
+  }
+}
+
+.baner {
+  background-image: url(../../img/mainImg.svg);
+  height: 445px;
+  position: relative;
+
+  &_header {
+    position: absolute;
+    top: 285px;
+    width: 272px;
+    height: 49px;
+    background: $white;
+    font-family: $mainFont;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.01em;
+  }
+  &_description {
+    position: absolute;
+    top: 334px;
+    width: 487px;
+    height: 42px;
+    background: $black;
+    font-family: $mainFont;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tab {
+  display: flex;
+  flex-flow: row wrap;
+
+  &_item {
+    width: 222px;
+    height: 85px;
+    background: $light;
+
+    border-left: 1px solid #f9fbfb;
+    border-right: 1px solid #d6e6e6;
+    &:hover {
+      background: $light-activ;
+    }
+  }
+  &_info {
+    margin-top: 26px;
+    height: 37px;
+    margin-left: 20px;
+  }
+  &_title {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: $primary;
+  }
+  &_description {
+    font-family: $mainFont;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 19px;
+    color: $primary;
+  }
+}
+
+.subscribeBox {
+  margin-top: 30px;
+  width: 896px;
+  height: 51px;
+  border-top: $borderDashedLine;
+  border-bottom: $borderDashedLine;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .newsletterDescription {
+    width: 530px;
+    height: 32px;
+    font-family: $mainFont;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  img {
+    width: 32px;
+    height: 26px;
+  }
+  input {
+    width: 152px;
+    padding-left: 6px;
+    height: 22px;
+    background: $white;
+    border: 1px solid $smokie;
+    &::placeholder {
+      color: $smokie;
+
+      font-family: $mainFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 10px;
+    }
+  }
+  button {
+    @include borderButtonSubscribeBox;
+    width: 80px;
+    height: 23px;
+    background: linear-gradient(180deg, #f4f3f3 0%, #bbb9b9 100%);
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.cards {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  row-gap: 25px;
+
+  .card {
+    width: 207px;
+    height: 336px;
+
+    img {
+      width: 207px;
+      height: 143px;
+      outline: 11px solid $white;
+      outline-offset: -11px;
+    }
+
+    &_frame {
+      width: 207px;
+      height: 143px;
+      border: $borderSolidLine;
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+    }
+
+    &_header {
+      margin-top: 11px;
+      font-family: $mainFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+      color: $primary;
+    }
+
+    &_body {
+      margin-top: 9px;
+      font-family: $mainFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+      color: $black;
+    }
+
+    .data {
+      margin-top: 11px;
+      font-family: $mainFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+      color: $smokie;
+    }
+
+    .read {
+      margin-top: 11px;
+      font-family: $mainFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+      color: $primary;
+    }
+  }
+}
+
+footer {
+  border-top: $borderFooter;
+  width: 1088px;
+  height: 92px;
+  background: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed;
+  bottom: 0; */
+
+  .infoFoodSense {
+    a {
+      font-family: $mainFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: -0.02em;
+      color: $primary;
+    }
+    display: flex;
+    li {
+      padding: 0 5px;
+      border-right: 1px solid $smokie;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+        border: 0;
+      }
+    }
+  }
+
+  .rights {
+    margin-top: 5px;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.02em;
+    color: $smokie;
+  }
+
+  .footer_icons {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+}

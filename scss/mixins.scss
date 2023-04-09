@@ -1,0 +1,34 @@
+@mixin fontMenu {
+  font-family: $mainFont;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $primary;
+}
+@mixin fontTitleTab {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: $primary;
+}
+@mixin fontDescriptionTab {
+  font-family: $mainFont;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 19px;
+  color: $primary;
+}
+
+@mixin borderButtonMenu {
+  border: $borderSolidLine;
+  border-radius: 5px;
+}
+
+@mixin borderButtonSubscribeBox {
+  border: $borderSolidLine;
+  border-radius: 2px;
+}

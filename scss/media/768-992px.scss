@@ -1,0 +1,82 @@
+@media screen and (max-width: 992px) {
+  .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .asideAndMain {
+    flex-direction: column;
+    gap: 30px;
+
+    .logo {
+      width: 120px;
+      height: 120px;
+    }
+
+    aside {
+      display: flex;
+      gap: 90px;
+    }
+
+    .aside_tweet {
+      display: none;
+    }
+    .aside_friends {
+      display: none;
+    }
+  }
+
+  aside {
+    .menu {
+      display: flex;
+      align-items: center;
+      margin: 0;
+
+      &_item {
+        width: 100px;
+        height: 62px;
+        margin: 0;
+        display: block;
+      }
+      &_info {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+      }
+
+      &_heading {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .subscribeBox {
+    width: 703px;
+    height: 68px;
+
+    .newsletterDescription {
+      width: 364px;
+      height: 48px;
+    }
+  }
+
+  .card {
+    width: 157px;
+
+    img {
+      width: 157px;
+    }
+
+    &_frame {
+      width: 157px;
+    }
+  }
+
+  footer {
+    width: 716px;
+    height: 82px;
+  }
+}

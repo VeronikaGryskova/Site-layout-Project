@@ -1,0 +1,87 @@
+@media screen and (max-width: 680px) {
+  .content {
+    margin: 0 auto;
+  }
+  .asideAndMain {
+    aside {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 34px;
+      width: auto;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  .main {
+    margin-top: 10px;
+  }
+  .baner {
+    background-image: url(../../img/680px/baner680px.svg);
+    width: 480px;
+    height: 373px;
+
+    &_header {
+      top: 286px;
+      width: 470px;
+    }
+
+    &_description {
+      top: 335px;
+      width: 470px;
+    }
+  }
+
+  .subscribeBox {
+    margin-top: 30px;
+    width: 479px;
+    height: 128px;
+
+    input {
+      width: 312px;
+    }
+
+    .newsletterDescription {
+      width: 366px;
+      height: 48px;
+    }
+  }
+
+  .cards {
+    row-gap: 30px;
+
+    .card {
+      width: 375px;
+      height: 380px;
+      img {
+        width: 345px;
+        height: 225px;
+      }
+      &_frame {
+        width: 345px;
+        height: 225px;
+      }
+
+      &_header {
+        font-size: 22px;
+        margin-top: 13px;
+      }
+
+      &_body {
+        font-size: 18px;
+        margin-top: 13px;
+        height: auto;
+        margin-bottom: 13px;
+      }
+    }
+  }
+
+  span {
+    margin-top: 13px;
+    font-size: 16px;
+  }
+
+  footer {
+    width: 90vw;
+  }
+}
